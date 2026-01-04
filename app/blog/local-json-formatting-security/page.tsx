@@ -1,3 +1,7 @@
+<p style={{ fontSize: "0.9rem", color: "#666" }}>
+  Last updated: January 2026
+</p>
+
 export const metadata = {
   title:
     "Why Local JSON Formatting Is Safer for Modern Developers",
