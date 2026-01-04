@@ -1,3 +1,10 @@
+export const metadata = {
+  title:
+    "Mastering JSON Schema: Why Validation Is the Key to Scalable APIs",
+  description:
+    "Discover how JSON Schema validation improves API reliability, prevents malformed data, and supports scalable backend architectures.",
+};
+
 export default function JsonVsXml() {
   return (
     <article style={{ padding: "2rem", maxWidth: "800px" }}>
