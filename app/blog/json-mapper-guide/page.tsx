@@ -1,3 +1,10 @@
+export const metadata = {
+  title:
+    "Effortless Data Transformation: How the JSON Mapper at JSON Lab Saves You Hours",
+  description:
+    "Learn how a JSON mapper helps developers transform complex, nested JSON into clean, usable data structures without writing custom scripts.",
+};
+
 export default function JsonMapperGuide() {
   return (
     <article
