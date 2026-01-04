@@ -1,3 +1,7 @@
+<p style={{ fontSize: "0.9rem", color: "#666" }}>
+  Last updated: January 2026
+</p>
+
 export const metadata = {
   title: "Mastering JSON Schema: Why Validation Is the Key to Scalable APIs",
   description:
