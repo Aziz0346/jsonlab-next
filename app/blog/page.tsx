@@ -1,5 +1,11 @@
 import Link from "next/link";
 
+export const metadata = {
+  title: "JSON Lab Blog – Practical Guides for Working with JSON",
+  description:
+    "Practical guides, security insights, and real-world techniques for working with JSON in modern web development.",
+};
+
 export default function BlogIndex() {
   return (
     <main style={{ padding: "2rem", maxWidth: "900px", margin: "0 auto" }}>
