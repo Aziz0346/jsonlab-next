@@ -1,12 +1,14 @@
+import Link from "next/link";
+
 export const metadata = {
-  title: "Beyond Brackets: Converting Plain Text to Structured JSON",
+  title: "JSON Lab Blog – Practical Guides for Working with JSON",
   description:
-    "Learn how to convert unstructured text, CSV-style data, and raw logs into structured JSON for modern web applications.",
+    "Practical guides, security insights, and real-world techniques for working with JSON in modern web development.",
 };
 
-export default function PlainTextToJson() {
+export default function BlogIndex() {
   return (
-    <article
+    <main
       style={{
         padding: "2rem",
         maxWidth: "900px",
@@ -14,94 +16,46 @@ export default function PlainTextToJson() {
         lineHeight: "1.7",
       }}
     >
-      <h1>Beyond Brackets: Converting Plain Text to Structured JSON</h1>
+      <header>
+        <h1>JSON Lab Blog</h1>
+        <p>
+          Practical guides, security insights, and real-world techniques for
+          working with JSON in modern web development.
+        </p>
+      </header>
 
-      <p>
-        One of the most common challenges developers face is working with
-        unstructured data. This might include a list of names stored in a text
-        file, loosely formatted CSV-style records, or raw log output generated
-        by an application.
-      </p>
+      <section aria-labelledby="articles-heading">
+        <h2 id="articles-heading" style={{ marginTop: "2rem" }}>
+          Articles
+        </h2>
 
-      <p>
-        Manually wrapping each line in quotes and brackets is a tedious and
-        error-prone process. As datasets grow larger, this approach quickly
-        becomes impractical and increases the risk of formatting mistakes.
-      </p>
+        <ul style={{ marginTop: "1rem", lineHeight: "1.9" }}>
+          <li>
+            <Link href="/blog/local-json-formatting-security">
+              Why Local JSON Formatting Is Safer for Modern Developers
+            </Link>
+          </li>
 
-      <p>
-        Converting unstructured text into structured JSON allows data to be
-        processed, validated, and reused across modern applications.
-      </p>
+          <li>
+            <Link href="/blog/json-validation-guide">
+              Mastering JSON Schema: Why Validation Is the Key to Scalable APIs
+            </Link>
+          </li>
 
-      <h2>The Problem with Unstructured Text</h2>
+          <li>
+            <Link href="/blog/json-mapper-guide">
+              Effortless Data Transformation: How the JSON Mapper at JSON Lab
+              Saves You Hours
+            </Link>
+          </li>
 
-      <p>
-        Unstructured text is difficult for software systems to work with.
-        Computers cannot reliably search, filter, or validate plain text in the
-        same way they can structured data.
-      </p>
-
-      <p>
-        To make data actionable, it must follow a predictable structure.
-        Manually converting hundreds or thousands of lines of text into valid
-        JSON can take hours and often leads to inconsistent results.
-      </p>
-
-      <h2>Intelligent Text-to-JSON Conversion</h2>
-
-      <p>
-        Text-to-JSON conversion tools simplify this process by transforming raw
-        text into structured JSON automatically. Common use cases include:
-      </p>
-
-      <ul>
-        <li>
-          <strong>Simple lists:</strong> Converting plain text lines into a JSON
-          array of strings.
-        </li>
-        <li>
-          <strong>Key-value pairs:</strong> Transforming text such as
-          <code> Name: Aziz </code>
-          into structured JSON objects.
-        </li>
-        <li>
-          <strong>CSV-style data:</strong> Converting comma-separated values
-          into a clean array of objects.
-        </li>
-      </ul>
-
-      <h2>Why Local Conversion Matters</h2>
-
-      <ul>
-        <li>
-          <strong>Privacy-first processing:</strong> Local conversion ensures
-          that sensitive text such as emails, logs, or internal notes is never
-          sent to a remote server.
-        </li>
-        <li>
-          <strong>Instant validation:</strong> Converted output can be checked
-          immediately to ensure it meets strict JSON syntax requirements.
-        </li>
-        <li>
-          <strong>Educational value:</strong> Seeing how flat text becomes
-          structured JSON helps learners understand data hierarchy and
-          modern communication formats.
-        </li>
-      </ul>
-
-      <h2>Conclusion</h2>
-
-      <p>
-        Structured data is the foundation of modern software systems. Converting
-        unstructured text into JSON is often the first step toward automation,
-        validation, and integration.
-      </p>
-
-      <p>
-        By eliminating manual formatting, developers can focus on building
-        reliable features instead of wrestling with data inconsistencies.
-      </p>
-    </article>
+          <li>
+            <Link href="/blog/plain-text-to-json">
+              Beyond Brackets: Converting Plain Text into Structured JSON
+            </Link>
+          </li>
+        </ul>
+      </section>
+    </main>
   );
 }
