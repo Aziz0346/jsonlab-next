@@ -1,3 +1,10 @@
+export const metadata = {
+  title:
+    "Why Local JSON Formatting Is Safer for Modern Developers",
+  description:
+    "Understand the security and performance benefits of local JSON formatting and why browser-based tools protect sensitive data.",
+};
+
 export default function LocalJsonFormattingSecurity() {
   return (
     <article
