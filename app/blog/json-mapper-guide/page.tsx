@@ -1,3 +1,7 @@
+<p style={{ fontSize: "0.9rem", color: "#666" }}>
+  Last updated: January 2026
+</p>
+
 export const metadata = {
   title:
     "Effortless Data Transformation: How the JSON Mapper at JSON Lab Saves You Hours",
